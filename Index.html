@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dde41dc56c.js" crossorigin="anonymous"></script>
+    <style>
+        .foto_perfil {
+            height: 200px;
+            width: auto;
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .corPrimaria {
+            background-color: #18bc9c;
+        }
+
+        .corSecundaria {
+            background-color: #2c3e50;
+        }
+
+        p {
+            font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: black !important;
+        }
+
+        .icones {
+            padding-left: 5px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+
+        .titulosVerdes {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #18bc9c;
+        }
+        
+        .textoBranco{
+            color: white !important;
+        }
+
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+
+        .textoFooter {
+            margin:0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Início do código do menu de navegação-->
+    <nav class="corSecundaria navbar navbar-expand-lg"><!-- bg-light-->>
+        <div class="container-fluid">
+            <a class="navbar-brand textoBranco" href="index_test.html">Eliabe Rocha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index_test.html" class="nav-link textoBranco" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textoBranco" href="#sobre-mim">Sobre Mim</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle textoBranco" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Projetos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item textoBranco" href="#">Action</a></li>
+                            <li><a class="dropdown-item textoBranco" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item textoBranco" href="#">Something else here</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="nav-item">
+                        <a href = "#projetos" class="nav-link textoBranco">Projetos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href = "#contato" class="nav-link textoBranco">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Fim do código do menu de navegação-->
+
+    <!--Início da seção de apresentação-->
+    <section class="jumbotron text-center corPrimaria" id="Home">
+        <div class="container">
+            <img class="foto_perfil" src='img/PErfil.jpg'>
+            <h1 class="jumbotron-heading textoBranco">Eliabe Rocha</h1>
+            <p class="lead textoBranco">Estudante de Ciência da computação e apaixonado por dados, me aventuro em usar
+                dados e inteligência artificial de maneira a desvendar o mundo e tornar ele um pouco melhor.</p>
+            <p>
+                <a href="#" class="btn btn-danger my-2">Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/eliabe-rocha-da-cruz-88628930/"><i
+                    class="textoBranco fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Eliabe-Rocha"><i class="textoBranco icones fa-brands fa-github"></i></a>
+        </div>
+    </section>
+    <!--Fim da seção de apresentação-->
+
+    <!--Início da seção de album-->
+    <div class="album py-5 bg-light"  id="projetos">
+        <div class="container">
+            <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="/img/dados_TCC.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Projeto de analise dos dados do ENEM 2020</p>
+                            <ul>
+                                <li>Linguagem R</li>
+                                <li>Google Colab</li>
+                                <li>Estatística Descritiva</li>
+                                <li>Regrassão Multinível</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-success">Visualizar Projeto</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Código</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22449%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20449%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_182622f94a2%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A22pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_182622f94a2%22%3E%3Crect%20width%3D%22449%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22150.359375%22%20y%3D%22122.4%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]"
+                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22449%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20449%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_182622f94a4%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A22pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_182622f94a4%22%3E%3Crect%20width%3D%22449%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22150.359375%22%20y%3D%22122.4%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                            data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Fim da seção de album-->
+
+    <!--Início da seção Sobre mim-->
+    <section class="jumbotron text-center corPrimaria">
+        <div class="container" id="sobre-mim">
+            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
+            <p class="lead textoBranco">
+                Bacharel em Ciências Sociais pela UERJ, sempre apoaixonado por programação, tentando unir ambas área realizei pós-graduação em Data Science, pela Usalq/USP.
+                Atualmente, curso ciência da computação, também pela uerj, com o objetivo de me aprofundar cada vez mais em tecnologia.
+            </p>
+        </div>
+    </section>
+
+
+        <!--Início da seção Depoimentos
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h2 class="jumbotron-heading text-center">
+                Depoimentos
+            </h2>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+        </div>
+    </section>-->
+
+    <!-- Início Seção contato-->
+    <section class="corPrimaria" id="contato">
+        <div>
+            <div class="container-fluid">
+                <h3 class="text-center titulosBrancos">Disponível para oportunidades</h3>
+                    <h4 style="padding-bottom: 60px; margin-bottom: 0px;" class="text-center">
+                        <a href="mailto:eliabe-rocha@hotmail.com">eliabe-rocha@hotmail.com</a>
+                    </h4>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Início Seção Fotter-->
+    <footer class="text-center corSecundaria textoFooter">
+        <p class="textoBranco">Copyright 2022 Eliabe Rocha</p>
+    </footer>
+</body>
+
+</html>
